@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashi Ashique | Akatsuki Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Red Chakra particle canvas -->
+  <canvas id="chakra"></canvas>
+
+  <!-- Akatsuki red cloud background symbol -->
+  <div class="cloud-symbol"></div>
+
+  <!-- HEADER -->
+  <header>
+    <h1 class="logo">Ashi<span><i class="fas fa-cloud"></i></span></h1>
+    <nav>
+      <a href="#about"><i class="fas fa-user"></i> About</a>
+      <a href="#skills"><i class="fas fa-magic"></i> Powers</a>
+      <a href="#projects"><i class="fas fa-project-diagram"></i> Missions</a>
+      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+    <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero fade-in">
+    <div class="hero-content">
+      <div class="profile-silhouette"></div>
+      <h2 class="glow-text">Embrace the Pain! 🌑</h2>
+      <p class="subtitle">Frontend Shadow • Akatsuki Coder • Red Cloud Enforcer</p>
+      <a href="#projects" class="btn red-cloud-btn"><i class="fas fa-scroll"></i> Unleash Missions</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section fade-in">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="Ashi Ashique Profile" class="profile-img">
+      <p>
+        I'm Ashi, a shadow in the Akatsuki ranks. Like Pain's unyielding vision, 
+        I code with ruthless precision to forge immersive, world-altering digital realms. 
+        From genjutsu-like UIs to unbreakable jutsu backends, my craft brings the forbidden arts to life.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section fade-in">
+    <h2>Akatsuki Powers</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <i class="fab fa-html5"></i>
+        <span>HTML</span>
+        <div class="bar"><div style="width: 95%"></div></div>
+      </div>
+      <div class="skill">
+        <i class="fab fa-css3-alt"></i>
+        <span>CSS</span>
+        <div class="bar"><div style="width: 90%"></div></div>
+      </div>
+      <div class="skill">
+        <i class="fab fa-js-square"></i>
+        <span>JavaScript</span>
+        <div class="bar"><div style="width: 85%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section fade-in">
+    <h2>Missions</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&h=200&fit=crop" alt="SignSpeak Project - Dark UI Translator" loading="lazy">
+        <h3>SignSpeak</h3>
+        <p>Real-time ISL to speech translator — decoding forbidden jutsu like Akatsuki seals.</p>
+        <a href="#" class="card-link"><i class="fas fa-external-link-alt"></i> View</a>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop" alt="HoloGraph Project - AR Interface" loading="lazy">
+        <h3>HoloGraph</h3>
+        <p>AR tabletop interface — summoning shadows like Itachi's genjutsu illusions.</p>
+        <a href="#" class="card-link"><i class="fas fa-external-link-alt"></i> View</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section fade-in">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <div class="input-group">
+        <input type="text" id="name" placeholder=" " required>
+        <label for="name">Your Name</label>
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="input-group">
+        <input type="email" id="email" placeholder=" " required>
+        <label for="email">Your Email</label>
+        <i class="fas fa-envelope"></i>
+      </div>
+      <div class="input-group">
+        <textarea id="message" placeholder=" " required></textarea>
+        <label for="message">Your Message</label>
+        <i class="fas fa-comment"></i>
+      </div>
+      <button type="submit" class="btn red-cloud-btn"><i class="fas fa-paper-plane"></i> Seal the Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Ashi Ashique | Akatsuki-Themed Portfolio</p>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
